@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculater</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+    <div class="calcu">
+        <div class="title">
+            <input type="text" id="screen" >
+            <button class="delete" id="delete" onclick="del()">del</button>
+        </div>
+        <div class="calculator" id="btn">
+            <table>
+                <tr>
+                    <td><button class="operator" onclick="operatorclick('+')">+</button></td>
+                    <td><button class="operator" onclick="operatorclick('-')">-</button></td>
+                    <td><button class="operator" onclick="operatorclick('*')">×</button></td>
+                    <td><button class="operator" onclick="operatorclick('/')">÷</button></td>
+                </tr>
+                <tr class="number">
+                    <td><button  onclick="myfunction('7')">7</button></td>
+                    <td><button  onclick="myfunction('8')">8</button></td>
+                    <td><button onclick="myfunction('9')">9</button></td>
+                    <td rowspan="4"><button class="equ" id="equal" onclick="totle()">=</button></td>
+                </tr>
+                <tr class="number">
+                    <td><button onclick="myfunction('4')">4</button></td>
+                    <td><button onclick="myfunction('5')">5</button></td>
+                    <td><button onclick="myfunction('6')">6</button></td>
+                </tr>
+                <tr class="number">
+                    <td><button onclick="myfunction('1')">1</button></td>
+                    <td><button onclick="myfunction('2')">2</button></td>
+                    <td><button onclick="myfunction('3')">3</button></td>
+                </tr>
+                <tr class="number">
+                    <td><button  onclick="myfunction('0')">0</button></td>
+                    <td><button  onclick="myfunction('.')">•</button></td>
+                    <td><button  onclick="reset()">C</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+<script src="calculator.js"></script>
+
+</html>
