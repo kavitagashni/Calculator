@@ -7,7 +7,7 @@
 }
 
 .title {
-    display: content;
+    display: flex;
     background-color: #FFF;
 }
 
